@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.04dd4c23.css",
-    "main.js": "/static/js/main.50e121cb.js",
+    "main.css": "/static/css/main.802d390f.css",
+    "main.js": "/static/js/main.ce7fe921.js",
     "static/js/787.d345b5f9.chunk.js": "/static/js/787.d345b5f9.chunk.js",
+    "static/media/BTCGHome.png": "/static/media/BTCGHome.516cb962008eeb30f9a4.png",
+    "static/media/CrimsonHome.png": "/static/media/CrimsonHome.4de6542b8a1bb6259d5e.png",
     "static/media/profile.png": "/static/media/profile.c076ef8296b57516ef87.png",
     "static/media/Cuttr.png": "/static/media/Cuttr.081564184897ab116faa.png",
     "static/media/Liu_Poster.png": "/static/media/Liu_Poster.7abcbbad763e52644a0b.png",
     "static/media/BurtMobile.png": "/static/media/BurtMobile.80f778e8cae8ececc165.png",
+    "static/media/Connect4.jpeg": "/static/media/Connect4.3c75c3365dc74188513c.jpeg",
+    "static/media/UNT.png": "/static/media/UNT.1647d893409a3d3e676e.png",
     "index.html": "/index.html",
-    "main.04dd4c23.css.map": "/static/css/main.04dd4c23.css.map",
-    "main.50e121cb.js.map": "/static/js/main.50e121cb.js.map",
+    "main.802d390f.css.map": "/static/css/main.802d390f.css.map",
+    "main.ce7fe921.js.map": "/static/js/main.ce7fe921.js.map",
     "787.d345b5f9.chunk.js.map": "/static/js/787.d345b5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04dd4c23.css",
-    "static/js/main.50e121cb.js"
+    "static/css/main.802d390f.css",
+    "static/js/main.ce7fe921.js"
   ]
 }
