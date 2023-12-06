@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.58010590.css",
+    "main.css": "/static/css/main.9a3ee33c.css",
     "main.js": "/static/js/main.d9a1a7cf.js",
     "static/js/787.d345b5f9.chunk.js": "/static/js/787.d345b5f9.chunk.js",
     "static/media/BTCGHome.png": "/static/media/BTCGHome.516cb962008eeb30f9a4.png",
@@ -15,12 +15,12 @@
     "static/media/MIT.png": "/static/media/MIT.8c0eee529e761195b9f2.png",
     "static/media/CuttrLogo.png": "/static/media/CuttrLogo.eb3162e38ec5cefff943.png",
     "index.html": "/index.html",
-    "main.58010590.css.map": "/static/css/main.58010590.css.map",
+    "main.9a3ee33c.css.map": "/static/css/main.9a3ee33c.css.map",
     "main.d9a1a7cf.js.map": "/static/js/main.d9a1a7cf.js.map",
     "787.d345b5f9.chunk.js.map": "/static/js/787.d345b5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58010590.css",
+    "static/css/main.9a3ee33c.css",
     "static/js/main.d9a1a7cf.js"
   ]
 }
