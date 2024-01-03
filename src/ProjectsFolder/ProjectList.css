@@ -1,0 +1,118 @@
+.unt {
+  float: right;
+  width: 15%;
+}
+
+.cuttr {
+  margin-right: 5px;
+  float: right;
+  width: 13%;
+}
+
+.mit {
+  float: right;
+  width: 21%;
+}
+.cs17 {
+  float: right;
+  width: 23%;
+}
+.content {
+  font-weight: bold;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.project-list h1 {
+  font-size: 250%;
+  color: white;
+}
+
+.project-preview {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 16px;
+  margin: 20px 0;
+  background-color: rgb(250, 245, 238);
+  border-bottom: 10px solid #585858;
+  box-shadow: 0px 6px 10px 3px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+.project-preview:hover {
+  box-shadow: 0px 6px 10px 3px #5c3a72;
+}
+.project-preview h2 {
+  font-weight: 300;
+  background-color:rgb(250, 245, 238);
+  color: #000000;
+}
+.project-preview a {
+  text-decoration: none;
+  color: #5c3a72;
+}
+.project-preview p {
+  background-color:rgb(250, 245, 238);
+  font-weight: 200;
+  text-decoration: none;
+  color: #5c3a72;
+}
+@media (max-width: 430px) {
+  .unt {
+    margin-top: 5%;
+    float: right;
+    width: 25%;
+  }
+
+  .cuttr {
+    margin-right: 10px;
+    float: right;
+    width: 22%;
+  }
+
+  .mit {
+    margin-top: 3%;
+    float: right;
+    width: 25%;
+  }
+
+  .project-list h1 {
+    font-size: 190%;
+  }
+
+  .project-preview {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 16px;
+    margin: 20px 0;
+    background-color: rgb(250, 245, 238);
+    border-bottom: 10px solid #585858;
+    box-shadow: 3px 10px 3px rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+
+  .project-preview:hover {
+    box-shadow: 3px 10px 3px #A356D6;
+  }
+
+  .project-preview h2 {
+    font-size: 20px;
+    background-color: rgb(250, 245, 238);
+    color: #585858;
+  }
+
+  .project-preview a {
+    text-decoration: none;
+    color: #5c3a72;
+  }
+
+  .project-preview p {
+    font-size: 80%;
+    background-color: rgb(250, 245, 238);
+    text-decoration: none;
+  }
+  .project-preview img{
+    display: none;
+  }
+}

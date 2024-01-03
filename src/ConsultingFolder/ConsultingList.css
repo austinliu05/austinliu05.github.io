@@ -1,0 +1,103 @@
+.content {
+  font-weight: bold;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.consulting-list h1{
+  font-size: 250%;  
+  color: white;
+}
+.consulting-preview {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 16px;
+  margin: 20px 0;
+  background-color: rgb(250, 245, 238);
+  border-bottom: 10px solid #585858;
+  box-shadow: 3px 10px 3px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-bottom: 2%;
+}
+.consulting-preview:hover {
+  box-shadow: 0px 6px 10px 3px #5c3a72;
+}
+.consulting-preview h2 {
+  background-color: rgb(250, 245, 238);
+  font-weight: 300;
+  color: #384b2d;
+}
+.consulting-preview a {
+  text-decoration: none;
+  color: #5c3a72;
+}
+.consulting-preview p {
+  font-weight: 200;
+  background-color:rgb(250, 245, 238);
+  text-decoration: none;
+  color: #5c3a72;
+}
+.btcg{
+  padding-top: 5px;
+  margin-right: 15px;
+  float: right;
+  width: 9%;
+}
+.crimson{
+  float: right;
+  width: 13%;
+}
+
+@media (max-width: 430px) {
+  .content {
+    font-weight: bold;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .consulting-list h1{
+    font-size: 190%;      
+  }
+  .consulting-preview {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 16px;
+    margin: 20px 0;
+    background-color: rgb(250, 245, 238);
+    border-bottom: 10px solid #585858;
+    box-shadow: 3px 10px 3px rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-bottom: 2%;
+  }
+  .consulting-preview:hover {
+    box-shadow: 3px 10px 3px #5c3a72;
+  }
+  .consulting-preview h2 {
+    background-color:rgb(250, 245, 238);
+    font-size: 20px;
+    color: #585858;
+  }
+  .consulting-preview a {
+    text-decoration: none;
+    color: #5c3a72;
+  }
+  .consulting-preview p {
+    font-size: 80%;
+    background-color: rgb(250, 245, 238);
+    text-decoration: none;
+  }
+  .btcg{
+    margin-top: 3%;
+    margin-right: 10px;
+    float: right;
+    width: 14%;
+  }
+  .crimson{
+    margin-top: 1%;
+    float: right;
+    width: 17%;
+  }
+  .consulting-preview img{
+    display: none;
+  }
+}

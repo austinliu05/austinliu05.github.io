@@ -1,0 +1,158 @@
+.consultingMDetails {
+  display: none;
+}
+.consultingDetails img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.consulting1 {
+  width: 80%;
+  height: 3000%;
+}
+
+.consulting2 {
+  width: 80%;
+  height: 3000%;
+}
+
+.consulting3 {
+  width: 69%;
+  height: 600px;
+}
+
+.containConsulting {
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: repeat(14, 20px);
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 1200px;
+}
+
+.containConsulting h1 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  font-size: 300%;
+  color: #ffffff;
+}
+
+.containConsulting h2 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.containConsulting p {
+  font-size: 120%;
+  font-weight: 200;
+}
+
+.containConsulting .roleDate {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  font-size: 120%;
+  font-weight: 200;
+}
+
+.containConsulting .body {
+  grid-row-start: 10;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  font-size: 120%;
+  font-weight: 200;
+}
+
+.collabC {
+  grid-row-start: 10;
+  grid-column-start: 11;
+  line-height: 30px;
+}
+
+@media (max-width: 430px) {
+  .consultingDetails {
+    display: none;
+  }
+  .consultingMDetails {
+    display: block;
+  }
+  .consultingMDetails img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  .mobilePDetails .consulting1 {
+    width: 80%;
+    height: 200px;
+  }
+
+  .mobilePDetails .consulting2 {
+    width: 80%;
+    height: 200px;
+  }
+
+  .containConsultM {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .containConsultM h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 160%;
+    color: #ffffff;
+  }
+
+  .containConsultM h2 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 60%;
+  }
+
+  .containConsultM p {
+    font-size: 60%;
+    margin-bottom: 5%;
+    font-weight: 500;
+  }
+
+  .containConsultM .roleDate {
+    font-size: 60%;
+    font-weight: 500;
+  }
+
+  .consultingMDetails .body {
+    font-size: 60%;
+    font-weight: 500;
+    margin-right: 10%;
+  }
+  .mobileCContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .skills {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 10%;
+    line-height: 15px;
+  }
+
+  .role {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    line-height: 15px;
+  }
+
+  .collabC {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    line-height: 15px;}
+}
