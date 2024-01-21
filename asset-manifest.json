@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c6cda24.css",
-    "main.js": "/static/js/main.e68a6c52.js",
+    "main.css": "/static/css/main.6bc232c2.css",
+    "main.js": "/static/js/main.ac888abb.js",
     "static/js/787.d345b5f9.chunk.js": "/static/js/787.d345b5f9.chunk.js",
     "static/media/BTCGHome.png": "/static/media/BTCGHome.516cb962008eeb30f9a4.png",
     "static/media/CrimsonHome.png": "/static/media/CrimsonHome.4de6542b8a1bb6259d5e.png",
@@ -21,19 +21,21 @@
     "static/media/css.png": "/static/media/css.5a94375258877f658306.png",
     "static/media/pytorch.png": "/static/media/pytorch.b16bd6e0db60f68de271.png",
     "static/media/flask.jpg": "/static/media/flask.fc662657fd3efe57b415.jpg",
+    "static/media/aws.png": "/static/media/aws.8c5a6a8c5f7e01f0d0d1.png",
     "static/media/MIT.png": "/static/media/MIT.8c0eee529e761195b9f2.png",
     "static/media/github.png": "/static/media/github.79714ac2abc8f0c290cc.png",
+    "static/media/SQL.png": "/static/media/SQL.c3f3658c9c8a261d0f5c.png",
     "static/media/CuttrLogo.png": "/static/media/CuttrLogo.eb3162e38ec5cefff943.png",
     "static/media/firebase.png": "/static/media/firebase.5857e021bf02081fa355.png",
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/racket.svg": "/static/media/racket.826e8e4e963f4ad80f87eda9587507f1.svg",
     "index.html": "/index.html",
-    "main.9c6cda24.css.map": "/static/css/main.9c6cda24.css.map",
-    "main.e68a6c52.js.map": "/static/js/main.e68a6c52.js.map",
+    "main.6bc232c2.css.map": "/static/css/main.6bc232c2.css.map",
+    "main.ac888abb.js.map": "/static/js/main.ac888abb.js.map",
     "787.d345b5f9.chunk.js.map": "/static/js/787.d345b5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c6cda24.css",
-    "static/js/main.e68a6c52.js"
+    "static/css/main.6bc232c2.css",
+    "static/js/main.ac888abb.js"
   ]
 }
