@@ -10,7 +10,7 @@ const ProjectDetails = () => {
     
     function findProject(projects) {
         for (let i = 0; i < projects.length; i++) {
-            if(projects.at(i).id == id){
+            if(projects.at(i).id === id){
                 return projects.at(i)
             }
         }
@@ -20,6 +20,7 @@ const ProjectDetails = () => {
     const project = findProject(projects)
     
     function determineClassName(projectData) {
+        console.log(projectData)
         if (projectData === 'Cuttr. Startup') {
             return 'project2';
         } else if (projectData === 'Burtmobile') {
@@ -31,7 +32,8 @@ const ProjectDetails = () => {
     return (
         <div>
             <div className='projectDetails'>
-                <img className={`${determineClassName(project.title)}`} alt="picture" src={project.img} />
+
+                <img className={`${determineClassName(project.title)}`} alt="" src={project.img} />
                 <article className='containProject'>
                     <h1>{project.title}</h1>
                     <p className='roleDate'>{project.role}    •    {project.date}</p>
@@ -61,12 +63,11 @@ const ProjectDetails = () => {
                 <div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src={project.link}
-                            frameborder="0"
                             width="790"
                             height="480"
-                            allowFullScreen="true"
-                            mozallowFullScreen="true"
+                            mozallowfullscreen="true"
                             webkitallowfullscreen="true"
                         ></iframe>
                     </div>
@@ -74,7 +75,7 @@ const ProjectDetails = () => {
                 </div>
             </div>
             <div className='mobilePDetails'>
-            <img className={`${determineClassName(project.title)}`} alt="picture" src={project.img} />
+            <img className={`${determineClassName(project.title)}`} alt="" src={project.img} />
                 <article className='containProjectM'>
                     <h1>{project.title}</h1>
                     <p className='roleDate'>{project.role}    •    {project.date}</p>
@@ -106,10 +107,11 @@ const ProjectDetails = () => {
                 <div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src={project.link}
-                            frameborder="0"
+                            frameBorder="0"
                             allowFullScreen="true"
-                            mozallowFullScreen="true"
+                            mozallowfullscreen="true"
                             webkitallowfullscreen="true"
                         ></iframe>
                     </div>

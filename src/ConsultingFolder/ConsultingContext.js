@@ -17,14 +17,14 @@ const consulting = [
       skills: "Life Sciences Expertise",
       collab: "Martin Kononov, CEO\nMaxwell Moody, COO\nDrew Morehead, CFO\nJuliette Woodcum, CMO",
       logo: CrimsonLogo,
-      id: 1
+      id: 2
    },
    {
       title: "Brown Technology & Consulting Group",
-      body: "Engaged in weekly team meetings focused on overhauling Amba's revenue model, a marketplace connecting influencers and brands. Proposed a tiered monthly subscription model, categorizing distinct features per tier. Explored diverse revenue streams including CPE (Cost Per Engagement), CTR (Click Through Rate), and CPC (Cost Per Click).",
+      body: "Manage club website and provide expert guidance on all software related questions. Engaged in weekly team meetings focused on overhauling Amba's revenue model, a marketplace connecting influencers and brands. Proposed a tiered monthly subscription model, categorizing distinct features per tier. Explored diverse revenue streams including CPE (Cost Per Engagement), CTR (Click Through Rate), and CPC (Cost Per Click).",
       date: "Current",
       employer: "Consulting Club",
-      role: "Associate Consultant",
+      role: "VP of Technology",
       link: "https://browntechnologyconsulting.com/",
       img: btcg,
       skills: "Market Analysis\nRevenue Model Strategies\nProblem Solving\nCreativity",

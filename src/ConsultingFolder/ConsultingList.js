@@ -21,7 +21,7 @@ const ConsultingList = () => {
                         pathname: `/consulting/${consulting.id}`,
                         data: consulting
                     }}>
-                        <img className={`${determineClassName(consulting.title)}`} alt="picture" src={consulting.logo} />
+                        <img className={`${determineClassName(consulting.title)}`} alt="" src={consulting.logo} />
                         <h2>{consulting.title}</h2>
                         <p>{consulting.employer}</p>
                         <p>{consulting.date}</p></Link>

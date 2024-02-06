@@ -1,8 +1,10 @@
-
 import './Game.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { ref, set } from 'firebase/database';
+import {database} from '../firebaseConfig'
 
-const Game = ({ onClose }) => {
+const Game = ({ onClose, record}) => {
+    // hooks
     const ROWS = 6;
     const COLUMNS = 7;
     const [hasWon, setHasWon] = useState(false);
@@ -11,7 +13,8 @@ const Game = ({ onClose }) => {
     const [isGameActive, setIsGameActive] = useState(true);
     const [isInvalid, setInvalid] = useState(false);
     const [isPlayerTurn, setIsPlayerTurn] = useState(true);
-
+    const [recent] = useState(false);
+    // creating board
     const generateGrid = () => {
         const grid = [];
         for (let row = 0; row < ROWS; row++) {
@@ -23,6 +26,7 @@ const Game = ({ onClose }) => {
         }
         return grid;
     };
+    // creating visual for the board (different colors)
     const [gridData, setGridData] = useState(generateGrid());
     const Grid = ({ gridData, onButtonClick }) => {
         return (
@@ -32,7 +36,7 @@ const Game = ({ onClose }) => {
                         {row.map(cell => (
                             <button
                                 key={cell.id}
-                                className={`${cell.isClicked ? 'clicked' : cell.AIPlace ? 'placed' : !isGameActive || !isPlayerTurn ? 'no-hover' : ''}`}
+                                className={`${cell.isClicked ? 'clicked' : cell.recent ? 'recent' : cell.AIPlace ? 'placed' : !isGameActive || !isPlayerTurn ? 'no-hover' : ''}`}
                                 onClick={() => onButtonClick(cell.row, cell.col, cell.id)}>
                                 {/* Display game state here */}
                             </button>
@@ -42,6 +46,7 @@ const Game = ({ onClose }) => {
             </div>
         );
     };
+    // if button is clicked by the user
     const handleButtonClick = (row, col, id) => {
         console.log(`Button clicked at row ${row}, column ${col}`);
         if (!isGameActive || !isPlayerTurn) {
@@ -62,7 +67,7 @@ const Game = ({ onClose }) => {
             }
             return { ...cell }; // Return a new object for other cells
         }));
-
+        // modifyng board with user input
         setGridData(newGridData);
         let board = []
         for (let i = 0; i < 6; i++) {
@@ -74,11 +79,11 @@ const Game = ({ onClose }) => {
                 } else if (newGridData[i][j].AIPlace) {
                     val = -1
                 }
-                if (j == 3) {
+                if (j === 3) {
                     val = val * 8
-                } else if (j == 2 || j == 4) {
+                } else if (j === 2 || j === 4) {
                     val = val * 4
-                } else if (j == 1 || j == 5) {
+                } else if (j === 1 || j === 5) {
                     val = val * 2
                 }
                 currRow.push(val)
@@ -90,9 +95,12 @@ const Game = ({ onClose }) => {
         sendData(data)
         setIsPlayerTurn(false);
     };
+    // fetching data from backend flask 
     const [data, setData] = useState([{}])
     const sendData = (data) => {
-        fetch("https://apoxie.pythonanywhere.com/Connect4", {
+        //http://127.0.0.1:5000/connect4
+        // https://apoxie.pythonanywhere.com/connect4
+        fetch("https://apoxie.pythonanywhere.com/connect4", {
             method: "POST",
             cache: "no-store",
             headers: {
@@ -105,27 +113,37 @@ const Game = ({ onClose }) => {
             .then(responseData => {
                 console.log("Server Response:", responseData);
                 responseData = JSON.parse(responseData)
-                if (responseData["status"] == 'WIN') {
+                // checks for game state
+                if (responseData["status"] === 'WIN') {
                     setHasWon(true)
                     setIsGameActive(false);
-                } else if (responseData["status"] == 'LOSE') {
+                    updateRecord(record.Wins, record.Losses + 1, record.Ties);
+                } else if (responseData["status"] === 'LOSE') {
                     setHasLost(true)
                     setIsGameActive(false);
-                } else if (responseData["status"] == 'DRAW') {
+                    updateRecord(record.Wins + 1, record.Losses, record.Ties);
+                } else if (responseData["status"] === 'DRAW') {
                     setHasDraw(true)
                     setIsGameActive(false);
+                    updateRecord(record.Wins, record.Losses, record.Ties + 1);
                 }
                 setData(responseData["board"])
                 let board = responseData["board"]
                 const newGridData = JSON.parse(JSON.stringify(gridData));
+                let x = responseData["x"] - 1;
+                let y = 5 - responseData["y"];
+                // modifies board with AI's move
                 for (let i = 0; i < 6; i++) {
                     for (let j = 0; j < 7; j++) {
-                        if (board[i][j] >= 1) {
+                        if (i === y && x === j) {
+                            // tracks the most recent move by the AI
+                            newGridData[y][x] = { ...newGridData[y][x], recent: true, AIPlace: true };
+                        } else if (board[i][j] >= 1) {
                             newGridData[i][j] = { ...newGridData[i][j], isClicked: true };
                         } else if (board[i][j] <= -1) {
-                            newGridData[i][j] = { ...newGridData[i][j], AIPlace: true };
+                            newGridData[i][j] = { ...newGridData[i][j], AIPlace: true, recent: false };
                         } else {
-                            newGridData[i][j] = { ...newGridData[i][j], AIPlace: false, isClicked: false };
+                            newGridData[i][j] = { ...newGridData[i][j], AIPlace: false, isClicked: false, recent: false };
                         }
                     }
                 }
@@ -137,6 +155,7 @@ const Game = ({ onClose }) => {
                 console.error("Error sending data:", error);
             });
     };
+    // resets the board 
     function resetGameState() {
         setHasDraw(false)
         setHasLost(false)
@@ -144,11 +163,24 @@ const Game = ({ onClose }) => {
         setIsGameActive(true)
         setInvalid(false)
         const newGridData = gridData.map(rowData => rowData.map(cell => {
-            return { ...cell, isClicked: false, AIPlace: false }; // Return a new object for other cells
+            return { ...cell, isClicked: false, AIPlace: false, recent: false }; // Return a new object for other cells
         }));
 
         setGridData(newGridData);
     }
+
+    function updateRecord(wins, losses, ties) {
+        const recordRef = ref(database, 'Connect4/Record');
+        set(recordRef, {
+          Wins: wins,
+          Losses: losses,
+          Ties: ties
+        }).then(() => {
+          console.log('Record updated successfully');
+        }).catch((error) => {
+          console.error('Error updating record: ', error);
+        });
+      }
     return (
         <div className='game'>
             <div className="popup-container">
@@ -187,20 +219,19 @@ const Game = ({ onClose }) => {
                     <button id="playAgainButton" className="play-again-btn" onClick={resetGameState}>
                         Play Again?</button>
                 }
-                {isPlayerTurn && isGameActive && !isInvalid && 
-                <div className="move-popup">
-                    <div>
-                        <h1>Your turn</h1>
-                    </div>
-                </div>}
+                {isPlayerTurn && isGameActive && !isInvalid &&
+                    <div className="move-popup">
+                        <div>
+                            <h1>Your turn</h1>
+                        </div>
+                    </div>}
                 {!isPlayerTurn && isGameActive &&
-                <div className="move-popup">
-                    <div>
-                        <h1>AI's turn</h1>
-                        <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-                    </div>
-                </div>}
-
+                    <div className="move-popup">
+                        <div>
+                            <h1>AI's turn</h1>
+                            <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                        </div>
+                    </div>}
             </div>
         </div>
     );

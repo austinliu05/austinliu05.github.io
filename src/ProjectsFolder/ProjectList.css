@@ -1,44 +1,34 @@
-.unt {
+.project-preview img{
   float: right;
+}
+.brown{
+  width: 8%;
+  margin-right: 15px;
+}
+.unt {
   width: 15%;
 }
-
 .cuttr {
   margin-right: 5px;
-  float: right;
   width: 13%;
 }
-
 .mit {
-  float: right;
   width: 21%;
 }
-.cs17 {
-  float: right;
-  width: 23%;
+.py {
+  width: 10%;
 }
-.content {
-  font-weight: bold;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
 .project-list h1 {
-  font-size: 250%;
   color: white;
 }
 
 .project-preview {
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px 16px;
   margin: 20px 0;
   background-color: rgb(250, 245, 238);
   border-bottom: 10px solid #585858;
   box-shadow: 0px 6px 10px 3px rgb(0, 0, 0);
   border-radius: 20px;
-  margin-bottom: 2%;
 }
 .project-preview:hover {
   box-shadow: 0px 6px 10px 3px #5c3a72;
@@ -57,6 +47,43 @@
   font-weight: 200;
   text-decoration: none;
   color: #5c3a72;
+}
+
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  margin-top: 15px;
+  float: right;
+  font-size: 30px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate .5s linear 0s infinite;
+}
+.blank{
+  display: none;
+}
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }
 @media (max-width: 430px) {
   .unt {
@@ -113,6 +140,9 @@
     text-decoration: none;
   }
   .project-preview img{
+    display: none;
+  }
+  .rainbow{
     display: none;
   }
 }

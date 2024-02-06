@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import './ProjectList.css'
-import {useContext} from 'react'
+import { useContext } from 'react'
 import ProjectContext from './ProjectContext'
 
 const ProjectList = () => {
@@ -15,6 +15,10 @@ const ProjectList = () => {
             return 'mit';
         } else if (projectData === 'Connect4') {
             return 'cs17';
+        }else if(projectData === 'Digit Recognition'){
+            return 'py';
+        }else{
+            return 'brown'
         }
     }
     return (
@@ -26,11 +30,14 @@ const ProjectList = () => {
                         pathname: `/projects/${project.id}`,
                         data: project
                     }}>
-                        <img className={`${determineClassName(project.title)}`} alt="picture" src={project.logo} />
+                        <img className={`${determineClassName(project.title)}`} alt="" src={project.logo} />
+                        <div className={`${project.title === 'Connect4' ? 'shadowBox' : 'blank'}`}>
+                            <h3 className="rainbow">PLAY ME</h3>
+                        </div>
                         <h2>{project.title}</h2>
                         <p>{project.desc}</p>
                         <p>{project.date}</p>
-                        </Link>
+                    </Link>
                 </div>
             ))}
         </div>

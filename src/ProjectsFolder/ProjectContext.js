@@ -6,21 +6,32 @@ import cuttr from './assets/Cuttr/Cuttr.png';
 import CutLogo from './assets/Cuttr/CuttrLogo.png';
 import MITlogo from './assets/BurtMobile/MIT.png';
 import minimax from './assets/Connect4/minimax.webp';
-import CS17 from './assets/Connect4/browncs.png';
+import brown from './FindFood/brown.png'
 
 const projects = [
    {
+      title: "Find My Food",
+      body: "Developed a web application for Brown University to streamline the search for preferred dining hall meals, leveraging Python web scraping on AWS Lambda for weekly menu extraction from the university's dining site. The scraped data is stored in an S3 bucket and integrated into an AWS RDS database by another Lambda function. A Flask backend serves this data, improving user meal selection with a voting system for popular dishes. The project showcases advanced CI/CD practices, employing Jest and Pytest within GitHub Actions for automated testing and deployment.",
+      date: "January 2024 - Current",
+      skills: "Figma\nPython\nFlask\nAWS\nMySQL Workbench\nCI/CD (Pytest & Jest)",
+      collab: "N/A",
+      role: "Lead Developer",
+      desc: "Web App",
+      employer: "Personal",
+      logo: brown,
+      id: 5
+   },
+   {
       title: "Connect4",
-      body: "Enhanced my programming skills in ReasonML by creating a Connect4 game for my CS17 project, integrating player vs. player and player vs. AI modes. Employed a minimax and estimateValue algorithm for the AI, offering a strategic gameplay experience. Extended my skillset by translating the game into Python, and am now advancing towards its web implementation",
-      date: "November 2023",
-      skills: "Python\nEstimate Value Algorithim\nMinimax Algorithim",
+      body: "Developed Connect4 game in ReasonML. This project featured player vs. player and player vs. AI modes, with the AI's strategic gameplay powered by a minimax algorithm and an estimateValue function. Further adapted the game in Python, and deployed using Flask for the backend and React for the frontend. Used Google Firebase to track total Wins/Losses/Draws.",
+      date: "November 2023 - December 2023",
+      skills: "Python\nFlask\nReactJS\nEstimate Value Algorithim\nMinimax Algorithim",
       collab: "N/A",
       role: "Student",
       desc: "CS17 Project",
       employer: "Brown CSCI 0170",
       img: minimax,
-      logo: CS17,
-      id: 1
+      id: 4
    },
    {
       title: "Phantom Traffic Jam Prevention",
@@ -36,7 +47,7 @@ const projects = [
       link1: "https://www.youtube.com/embed/5J1aIkcvFXI?si=dKH7zLIYz0vBhWI0",
       link2: "https://www.youtube.com/embed/_YuuhvzRyYc?si=0ebgjBKZTtqrnn5k&amp;start=10",
       link3: "https://www.youtube.com/embed/3MftQa9CS4k?si=HMrign-qCCFBViLJ&amp;start=1",
-      id: 2
+      id: 3
    },
 
    {
@@ -52,24 +63,24 @@ const projects = [
       logo: CutLogo,
       ppt: "Proof of Concept",
       link: 'https://www.youtube.com/embed/bkoOC8PQvwE?si=fqqt85IP30Qii_fd',
-      id: 3
+      id: 2
    },
 
-   {
-      title: "Burtmobile",
-      body: "Studied at MIT EDW, gaining proficiency in power tools (Bandsaw, drill press, hand tools, etc.) at the MIT Makerspace. Harnessed creative brainstorming techniques, generating 1000+ ideas rapidly, and honed skills in iterative engineering design. Designed and fabricated custom controller molds for 'Burt,' a toddler with developmental coordination disorder, culminating in a laser-cut final version.",
-      date: "Summer 2019",
-      employer: "MIT Engineering Design Workshop",
-      role: "Student",
-      desc: "MIT Engineering Design Workshop",
-      skills: "Power tools\nCAD & Lasercutting\nElectrical Wiring",
-      collab: "Sophia Green\nAditi Shankar\nAmina",
-      img: burtmobile,
-      logo: MITlogo,
-      ppt: "MIT EDW Presentation",
-      link: 'https://docs.google.com/presentation/d/1cX1gkOLOp6rC8JWpMuOAiCnbpM1UmqQ1N4YPTSWAOOE/preview?usp=sharing',
-      id: 4
-   }
+   // {
+   //    title: "Burtmobile",
+   //    body: "Studied at MIT EDW, gaining proficiency in power tools (Bandsaw, drill press, hand tools, etc.) at the MIT Makerspace. Harnessed creative brainstorming techniques, generating 1000+ ideas rapidly, and honed skills in iterative engineering design. Designed and fabricated custom controller molds for 'Burt,' a toddler with developmental coordination disorder, culminating in a laser-cut final version.",
+   //    date: "Summer 2019",
+   //    employer: "MIT Engineering Design Workshop",
+   //    role: "Student",
+   //    desc: "MIT Engineering Design Workshop",
+   //    skills: "Power tools\nCAD & Lasercutting\nElectrical Wiring",
+   //    collab: "Sophia Green\nAditi Shankar\nAmina",
+   //    img: burtmobile,
+   //    logo: MITlogo,
+   //    ppt: "MIT EDW Presentation",
+   //    link: 'https://docs.google.com/presentation/d/1cX1gkOLOp6rC8JWpMuOAiCnbpM1UmqQ1N4YPTSWAOOE/preview?usp=sharing',
+   //    id: 1
+   // }
 ];
 
 const ProjectContext = createContext(projects);

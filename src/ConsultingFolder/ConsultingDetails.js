@@ -10,7 +10,7 @@ const ConsultingDetails = () => {
     
     function findProject(consults) {
         for (let i = 0; i < consults.length; i++) {
-            if(consults.at(i).id == id){
+            if(consults.at(i).id === id){
                 return consults.at(i)
             }
         }
@@ -32,7 +32,7 @@ const ConsultingDetails = () => {
                     rel="noreferrer"
                     target="_blank">
                     <img className={`${determineClassName(consult.title)}`}
-                        alt="picture"
+                        alt=""
                         src={consult.img} /></a>
                 <article className='containConsulting'>
                     <h1>{consult.title}</h1>
@@ -61,7 +61,7 @@ const ConsultingDetails = () => {
                     rel="noreferrer"
                     target="_blank">
                     <img className={`${determineClassName(consult.title)}`}
-                        alt="picture"
+                        alt=""
                         src={consult.img} /></a>
                 <article className='containConsultM'>
                     <h1>{consult.title}</h1>

@@ -7,10 +7,10 @@ const PhantomJam = () => {
     const locationData = useLocation();
     const id = parseInt(locationData.pathname.substring(locationData.pathname.lastIndexOf("/") + 1))
     const projects = useContext(ProjectContext);
-    
+
     function findProject(projects) {
         for (let i = 0; i < projects.length; i++) {
-            if(projects.at(i).id == id){
+            if (projects.at(i).id === id) {
                 return projects.at(i)
             }
         }
@@ -50,35 +50,39 @@ const PhantomJam = () => {
                 <div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src={project.link1}
                             frameborder="0"
                             width="790"
                             height="480"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
+
                         ></iframe>
                     </div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src={project.link2}
                             frameborder="0"
                             width="790"
                             height="480"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src={project.link3}
                             frameborder="0"
                             width="790"
                             height="480"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='border'></div>
@@ -87,13 +91,14 @@ const PhantomJam = () => {
                     </div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src="https://www.youtube.com/embed/favHY_6NbNA?si=QH6q-oH5Lnsyt8W_"
                             frameborder="0"
                             width="790"
                             height="480"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='border'></div>
@@ -102,13 +107,14 @@ const PhantomJam = () => {
                     </div>
                     <div className='visual'>
                         <iframe
+                            title="visual"
                             src="https://www.youtube.com/embed/kTM4iXl9Of8?si=fJArdr1-YKu7V1d4"
                             frameborder="0"
                             width="790"
                             height="480"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                 </div>
@@ -150,9 +156,9 @@ const PhantomJam = () => {
                             frameborder="0"
                             width="80%"
                             height="200"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='visual'>
@@ -161,9 +167,9 @@ const PhantomJam = () => {
                             frameborder="0"
                             width="80%"
                             height="200"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='visual'>
@@ -172,9 +178,9 @@ const PhantomJam = () => {
                             frameborder="0"
                             width="80%"
                             height="200"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='border'></div>
@@ -187,9 +193,9 @@ const PhantomJam = () => {
                             frameborder="0"
                             width="80%"
                             height="200"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                     <div className='border'></div>
@@ -202,9 +208,9 @@ const PhantomJam = () => {
                             frameborder="0"
                             width="80%"
                             height="200"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
+                            allowFullScreen="true"
+                            mozallowFullScreen="true"
+                            webkitallowFullScreen="true"
                         ></iframe>
                     </div>
                 </div>

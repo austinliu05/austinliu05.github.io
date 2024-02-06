@@ -1,0 +1,50 @@
+.bd {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+canvas {
+    border-radius: 10px;
+}
+
+.funcs {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.funcs img {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.funcs button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.funcs button:hover{
+    background-color: #9b9b9b;
+}
+
+.prediction {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}

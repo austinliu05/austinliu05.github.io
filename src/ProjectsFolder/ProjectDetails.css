@@ -23,12 +23,10 @@
   width: 60%;
   height: 600px;
 }
-
-.project4 {
-  width: 70%;
-  height: 600px;
+.minimax{
+  width: 65%;
+  height: 80vh;
 }
-
 .containProject {
   display: grid;
   grid-template-columns: repeat(12, 100px);
@@ -59,7 +57,7 @@
 
 .containProject p {
   font-size: 120%;
-  font-weight: 500;
+  font-weight: 200;
   color: #aaaaaa;
 }
 
@@ -68,7 +66,7 @@
   grid-column-start: 2;
   grid-column-end: 10;
   font-size: 120%;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .containProject .body {
@@ -76,7 +74,7 @@
   grid-column-start: 2;
   grid-column-end: 7;
   font-size: 120%;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .skills {
@@ -167,30 +165,27 @@
   .containProjectM h1 {
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 160%;
     color: #ffffff;
   }
 
   .containProjectM h2 {
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 60%;
   }
 
   .containProjectM p {
-    font-size: 60%;
     margin-bottom: 5%;
-    font-weight: 500;
+    font-weight: 200;
   }
 
   .containProjectM .roleDate {
     font-size: 60%;
-    font-weight: 500;
+    font-weight: 200;
   }
 
   .containProjectM .body {
     font-size: 60%;
-    font-weight: 500;
+    font-weight: 200;
     margin-right: 10%;
   }
   .mobilePContainer {

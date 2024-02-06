@@ -2,7 +2,7 @@
 .skillsContainer {
   text-align: center;
 }
-.languageContainer img {
+.skillsContainer img {
   width:  80px;
   height: 80px;
   object-fit: cover;
@@ -12,7 +12,6 @@
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
 .skillsContainer h2 {
   color: #aaaaaa;
   font-size: 100%;
@@ -52,7 +51,7 @@
   grid-column-start: 15;
   grid-row-start: 10;
 }
-.languageContainer {
+.iconContainer {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(10, 30px);
@@ -101,7 +100,7 @@
 .frameworkContainer {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(10, 30px);
+  grid-template-rows: repeat(5, 30px);
   /* background-color: #000000; */
 }
 .frameworkContainer img {
@@ -109,7 +108,7 @@
   height: 80px;
   object-fit: cover;
 }
-.labelROS{
+.labelPytorch{
   grid-column-start: 6;
   grid-row-start: 4;
 }
@@ -122,7 +121,11 @@
   grid-column-start: 12;
   grid-row-start: 4;
 }
-.ros {
+.labelROS{
+  grid-column-start: 15;
+  grid-row-start: 4;
+}
+.pytorch {
   grid-column-start: 6;
   border-radius: 10px;
 }
@@ -131,6 +134,41 @@
 }
 .flask {
   grid-column-start: 12;
+  border-radius: 10px;
+}
+.ros{
+  border-radius: 10px;
+  grid-column-start: 15;
+}
+.github {
+  border-radius: 10px;
+  grid-column-start: 9;
+}
+.labelGitHub{
+  grid-column-start: 9;
+  grid-row-start: 4;
+}
+.firebase {
+  grid-column-start: 12;
+}
+.labelFire{
+  grid-column-start: 12;
+  grid-row-start: 4;
+}
+.sql{
+  grid-column-start: 6;
+}
+.labelSQL{
+  grid-column-start: 6;
+  grid-row-start: 4;
+}
+.aws{
+  grid-column-start: 15;
+  border-radius: 10px;
+}
+.labelAWS{
+  grid-column-start: 15;
+  grid-row-start: 4;
 }
 .borderHome {
   margin-top: 5%;
@@ -181,12 +219,53 @@
 
 .icons {
   color: #000000;
-  grid-column-start: 3;
+  margin-left: 30px;
+  grid-column-start: 4;
   grid-column-end: 8;
   grid-row-start: 10;
   z-index: 2;
 }
-
+.resume{
+  grid-column-start: 3;
+  grid-row-start: 10;
+}
+.resume button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #A356D6;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #A356D6;
+ }
+ 
+ .resume button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #A356D6;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .resume button:hover::before {
+  width: 105%;
+ }
+ 
+ .resume button:hover {
+  color: #111;
+ }
+ 
 .container1 {
   display: inline-flex;
   justify-content: center;
@@ -207,7 +286,37 @@
 .container1:hover {
   background-color: #9c85ab;
 }
-
+@media (max-width: 1250px) {
+  .pfp {
+    grid-column-start: 10;
+    grid-row-start: 5;
+    width: 300%;
+    border-radius: 20px;
+    box-shadow: 40px 40px 0px 10px #696969;
+  }
+}
+@media (max-width: 1000px) {
+  .resume{
+    grid-column-start: 3;
+    grid-row-start: 12;
+  }
+  .pfp {
+    grid-column-start: 10;
+    grid-row-start: 6;
+    width: 300%;
+    border-radius: 20px;
+    box-shadow: 40px 40px 0px 10px #696969;
+  }
+  
+  .icons {
+    color: #000000;
+    margin-left: 30px;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 12;
+    z-index: 2;
+  }
+}
 @media (max-width: 430px) {
   .navbar {
     font-size: 100%;
@@ -263,7 +372,43 @@
   .iconsM:hover {
     color: #86679a;
   }
-
+  button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
   .containerM {
     margin-right: 30px;
     width: 8px;
@@ -285,7 +430,7 @@
     margin-top: 5%;
     margin-bottom: 7%;
   }
-  .languageContainer img {
+  .iconContainer img {
     width:  60px;
     height: 60px;
     object-fit: cover;
