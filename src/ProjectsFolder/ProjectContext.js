@@ -11,7 +11,7 @@ import brown from './FindFood/brown.png'
 const projects = [
    {
       title: "Find My Food",
-      body: "Developed a web application for Brown University to streamline the search for preferred dining hall meals, leveraging Python web scraping on AWS Lambda for weekly menu extraction from the university's dining site. The scraped data is stored in an S3 bucket and integrated into an AWS RDS database by another Lambda function. A Flask backend serves this data, improving user meal selection with a voting system for popular dishes. The project showcases advanced CI/CD practices, employing Jest and Pytest within GitHub Actions for automated testing and deployment.",
+      body: "Developed a web application for Brown University to streamline the search for preferred dining hall meals, leveraging Python web scraping on AWS Lambda for weekly menu extraction from the university's dining site. The scraped data is stored in an S3 bucket and integrated into an AWS RDS database by another Lambda function. The RDS is automatically turned off and on using Lambda functions to lower costs. A Flask backend serves the data, improving user meal selection with a voting system for popular dishes. The project showcases advanced CI/CD practices, employing Jest and Pytest within GitHub Actions for automated testing and deployment.",
       date: "January 2024 - Current",
       skills: "Figma\nPython\nFlask\nAWS\nMySQL Workbench\nCI/CD (Pytest & Jest)",
       collab: "N/A",

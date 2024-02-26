@@ -25,7 +25,7 @@ const consulting = [
       date: "Current",
       employer: "Consulting Club",
       role: "VP of Technology",
-      link: "https://browntechnologyconsulting.com/",
+      link: "https://browntechnologyconsultinggroup.com/#/",
       img: btcg,
       skills: "Market Analysis\nRevenue Model Strategies\nProblem Solving\nCreativity",
       collab: "Priyam Parekh\nGrace Yang\nJustin Dyer\nJames Phelan\nLeanne Chia\nGarrett Mann",
