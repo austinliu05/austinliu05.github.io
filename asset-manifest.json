@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.56816890.css",
-    "main.js": "/static/js/main.00a1ce6d.js",
+    "main.css": "/static/css/main.2a8dae48.css",
+    "main.js": "/static/js/main.b94cb377.js",
     "static/js/787.d345b5f9.chunk.js": "/static/js/787.d345b5f9.chunk.js",
     "static/media/BTCGHome.png": "/static/media/BTCGHome.516cb962008eeb30f9a4.png",
     "static/media/CrimsonHome.png": "/static/media/CrimsonHome.4de6542b8a1bb6259d5e.png",
@@ -15,6 +15,7 @@
     "static/media/minimax.webp": "/static/media/minimax.d182f98c5a2c5adfd127.webp",
     "static/media/c++.png": "/static/media/c++.d8d9a2f879d60721c1ac.png",
     "static/media/UNT.png": "/static/media/UNT.aca0ee4e7c4083820a22.png",
+    "static/media/MDP-logo.png": "/static/media/MDP-logo.030476910e58121e9479.png",
     "static/media/python.png": "/static/media/python.41259ded83ae0f2a4243.png",
     "static/media/html.png": "/static/media/html.bd375a8d11309c87c978.png",
     "static/media/css.png": "/static/media/css.5a94375258877f658306.png",
@@ -27,12 +28,12 @@
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
     "static/media/racket.svg": "/static/media/racket.826e8e4e963f4ad80f87eda9587507f1.svg",
     "index.html": "/index.html",
-    "main.56816890.css.map": "/static/css/main.56816890.css.map",
-    "main.00a1ce6d.js.map": "/static/js/main.00a1ce6d.js.map",
+    "main.2a8dae48.css.map": "/static/css/main.2a8dae48.css.map",
+    "main.b94cb377.js.map": "/static/js/main.b94cb377.js.map",
     "787.d345b5f9.chunk.js.map": "/static/js/787.d345b5f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56816890.css",
-    "static/js/main.00a1ce6d.js"
+    "static/css/main.2a8dae48.css",
+    "static/js/main.b94cb377.js"
   ]
 }
