@@ -1,10 +1,8 @@
 import {createContext} from 'react'
 import poster from './assets/PhantomJam/Liu_Poster.png';
 import UNTlogo from './assets/PhantomJam/UNT.png';
-import burtmobile from './assets/BurtMobile/BurtMobile.png';
 import cuttr from './assets/Cuttr/Cuttr.png';
 import CutLogo from './assets/Cuttr/CuttrLogo.png';
-import MITlogo from './assets/BurtMobile/MIT.png';
 import minimax from './assets/Connect4/minimax.webp';
 import brown from './FindFood/brown.png'
 

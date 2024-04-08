@@ -1,10 +1,12 @@
 import NavBar from './Home/NavBar'
 import Projects from './ProjectsFolder/Projects'
 import Consulting from './ConsultingFolder/Consulting'
+import Experiences from './Experiences/Experiences'
 import Home from './Home/Home'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import ProjectDetails from './ProjectsFolder/ProjectDetails';
 import ConsultingDetails from './ConsultingFolder/ConsultingDetails';
+import ExperienceDetails from './Experiences/ExperiencesDetails'
 import PhantomJam from './ProjectsFolder/PhantomJam'
 import Connect4 from './ProjectsFolder/Connect4/Connect4'
 import Brown from './ProjectsFolder/FindFood/BrownDining'
@@ -39,6 +41,12 @@ function App() {
           <Route exact path="/consulting/:id">
             <ConsultingDetails />
           </Route>
+          <Route exact path="/experiences">
+            <Experiences />
+          </Route>
+          {/* <Route exact path="/experiences/:id">
+            <ExperienceDetails />
+          </Route> */}
         </Switch>
       </div>
     </Router>

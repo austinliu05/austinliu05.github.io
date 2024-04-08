@@ -445,3 +445,8 @@
     object-fit: cover;
   }
 }
+@media (max-width: 500px) {
+  .links{
+    font-size: small;
+  }
+}

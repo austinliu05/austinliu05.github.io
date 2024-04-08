@@ -29,7 +29,7 @@ const Home = () => {
                 </div>
                 <img className="pfp" alt="profile" src={myImage} />
                 <div className='resume'>
-                    <a href="https://drive.google.com/file/d/1-kSKl-dWupRHys6PFBgbqFdUsUIbg-6p/view?usp=sharing" rel="noreferrer"
+                    <a href="https://drive.google.com/file/d/1TZx45CviuHNNAnYpTJ2EBsj-OXCJTFEF/view?usp=sharing" rel="noreferrer"
                         target="_blank" ><button>RESUME</button></a>
                 </div>
                 <div className="icons">

@@ -1,0 +1,220 @@
+.mobilePDetails{
+  display: none;
+}
+.experienceDetails img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+.containExperience {
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: repeat(14, 20px);
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 800px;
+  color: #5d5c5c;
+}
+
+.containExperience h1 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  font-weight: bold;
+  font-size: 300%;
+  color: #ffffff;
+}
+
+.containExperience h2 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+  color: #aaaaaa;
+
+}
+
+.containExperience p {
+  font-size: 120%;
+  font-weight: 200;
+  color: #aaaaaa;
+}
+
+.containExperience .roleDate {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  font-size: 120%;
+  font-weight: 200;
+}
+
+.containExperience .body {
+  grid-row-start: 10;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  font-size: 120%;
+  font-weight: 200;
+}
+
+.skills {
+  grid-row-start: 14;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  line-height: 30px;
+
+}
+
+.role {
+  grid-row-start: 10;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  line-height: 30px;
+
+}
+
+.collabP {
+  grid-row-start: 10;
+  grid-column-start: 11;
+  line-height: 30px;
+}
+
+.visual iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 80px;
+  border-radius: 40px;
+}
+
+.border {
+  height: 2px;
+  width: 90%;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #555;
+}
+
+.title h1 {
+  text-align: center;
+  padding-bottom: 70px;
+  font-weight: bold;
+  font-size: 300%;
+  color: #ffffff;
+}
+
+@media (max-width: 430px) {
+  .experienceDetails {
+    display: none;
+  }
+  .mobilePDetails {
+    display: block;
+  }
+  .mobilePDetails img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  .mobilePDetails .experience1 {
+    width: 85%;
+    height: 3000%;
+  }
+  .mobilePDetails .experience2 {
+    width: 80%;
+    height: 3000%;
+  }
+
+  .mobilePDetails .experience3 {
+    width: 80%;
+    height: 200px;
+  }
+
+  .mobilePDetails .experience4 {
+    width: 40%;
+    height: 600px;
+  }
+
+  .containexperienceM {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  .containexperienceM h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .containexperienceM h2 {
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .containexperienceM p {
+    margin-bottom: 5%;
+    font-weight: 200;
+  }
+
+  .containexperienceM .roleDate {
+    font-size: 60%;
+    font-weight: 200;
+  }
+
+  .containexperienceM .body {
+    font-size: 60%;
+    font-weight: 200;
+    margin-right: 10%;
+  }
+  .mobilePContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .skills {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 10%;
+    line-height: 15px;
+  }
+
+  .role {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    line-height: 15px;
+  }
+
+  .collabP {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    line-height: 15px;
+  }
+
+  .visual iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 80px;
+    border-radius: 40px;
+  }
+
+  .border {
+    height: 2px;
+    width: 90%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #555;
+  }
+
+  .title h1 {
+    text-align: center;
+    padding-bottom: 10%;
+    font-weight: bold;
+    font-size: 160%;
+    color: #ffffff;
+  }
+}

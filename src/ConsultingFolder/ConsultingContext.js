@@ -9,7 +9,7 @@ const consulting = [
    {
       title: "Crimson Bear Associates",
       body: "Currently working on client acquisition...",
-      date: "Current",
+      date: "October 2023 - Current",
       employer: "Consulting Firm",
       role: "Associate Consultant",
       link: "https://www.crimsonbearassociates.com/home",
@@ -22,7 +22,7 @@ const consulting = [
    {
       title: "Brown Technology & Consulting Group",
       body: "Manage club website and provide expert guidance on all software related questions. Engaged in weekly team meetings focused on overhauling Amba's revenue model, a marketplace connecting influencers and brands. Proposed a tiered monthly subscription model, categorizing distinct features per tier. Explored diverse revenue streams including CPE (Cost Per Engagement), CTR (Click Through Rate), and CPC (Cost Per Click).",
-      date: "Current",
+      date: "October 2023 - Current",
       employer: "Consulting Club",
       role: "VP of Technology",
       link: "https://browntechnologyconsultinggroup.com/#/",
