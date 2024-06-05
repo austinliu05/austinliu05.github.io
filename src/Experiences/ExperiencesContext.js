@@ -5,7 +5,7 @@ const experiences = [
    {
       title: "Kognitiv Edge",
       body: "",
-      date: "March 2024 - Current",
+      date: "March 2024 - July 2024",
       skills: "CI/CD Pipelines\nIaC (Infrastructure as Code\nTerraform",
       role: "Intern",
       desc: "Back End Dev Intern",
@@ -15,7 +15,7 @@ const experiences = [
    {
       title: "MyDataProduct",
       body: "",
-      date: "February 2024 - Current",
+      date: "February 2024 - May 2024",
       skills: "GitLab\nFlask\nGCP (Google Cloud Platform)\nTerraform\nRedis\nCI/CD Pipeline",
       role: "Intern",
       desc: "Data Product Engineering Intern",
